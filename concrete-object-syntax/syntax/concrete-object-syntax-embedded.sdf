@@ -1,0 +1,15 @@
+module concrete-object-syntax-embedded[E1 E2]
+
+imports
+  
+  concrete-object-syntax
+
+exports
+
+  context-free syntax
+  
+           "|[" Stmt "]|"  -> E1 {cons("ToTerm")}
+    "stmt" "|[" Stmt "]|"  -> E1 {cons("ToTerm")}
+  
+    "~"      E2 -> Exp {cons("FromTerm")}
+    "~exp:"  E2 -> Exp {cons("FromTerm")}

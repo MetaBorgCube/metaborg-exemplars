@@ -1,0 +1,12 @@
+module Stratego-concrete-object-syntax
+
+imports
+
+    StrategoMix[StrategoHost]
+    concrete-object-syntax-embedded[PreTerm[[StrategoHost]] Term[[StrategoHost]]]
+
+exports
+
+  context-free start-symbols
+  
+    Module[[StrategoHost]]

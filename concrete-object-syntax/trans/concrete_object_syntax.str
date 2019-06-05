@@ -1,0 +1,6 @@
+module sdf_meta_integrationtest
+
+imports
+
+  libstratego-lib
+  swap
