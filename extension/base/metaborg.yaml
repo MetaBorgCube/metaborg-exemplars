@@ -1,5 +1,5 @@
 ---
-id: org.metaborg:examplars.extension.base:0.1.0-SNAPSHOT
+id: org.metaborg:exemplars.extension.base:0.1.0-SNAPSHOT
 name: base
 dependencies:
   compile:

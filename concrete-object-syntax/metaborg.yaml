@@ -1,5 +1,5 @@
 ---
-id: org.metaborg:examplars.concrete_object_syntax:0.1.0-SNAPSHOT
+id: org.metaborg:exemplars.concrete_object_syntax:0.1.0-SNAPSHOT
 name: concrete-object-syntax
 dependencies:
   compile:
