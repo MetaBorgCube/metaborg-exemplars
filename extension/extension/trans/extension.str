@@ -1,0 +1,12 @@
+module extension
+
+imports
+  
+  base
+  signatures/base/-
+
+rules
+  
+  swap-editor: (_, _, ast, path, _) -> (path, <topdown(try(swap-exp))> ast)
+  
+  swap-exp: Add(e1, e2) -> Add(e2, e1)

@@ -1,0 +1,50 @@
+---
+id: org.metaborg:examplars.extension.base:0.1.0-SNAPSHOT
+name: base
+dependencies:
+  compile:
+  - org.metaborg:org.metaborg.meta.lang.esv:${metaborgVersion}
+  - org.metaborg:org.metaborg.meta.lang.template:${metaborgVersion}
+  source:
+  - org.metaborg:meta.lib.spoofax:${metaborgVersion}
+exports:
+- language: Stratego-Sugar
+  directory: trans
+  includes:
+  - "**/*.str"
+- language: Stratego-Sugar
+  directory: src-gen
+  includes:
+  - "completion/**/*.str"
+  - "pp/base/**/*.str"
+  - "pp/base-parenthesize.str"
+  - "signatures/base/*.str"
+pardonedLanguages:
+- EditorService
+- Stratego-Sugar
+- SDF
+debug:
+  typesmart: false
+language:
+  sdf:
+    pretty-print: base
+    sdf2table: c
+    placeholder:
+      prefix: "$"
+  stratego:
+    format: ctree
+    args:
+    - -la
+    - stratego-lib
+    - -la
+    - stratego-sglr
+    - -la
+    - stratego-gpp
+    - -la
+    - stratego-xtc
+    - -la
+    - stratego-aterm
+    - -la
+    - stratego-sdf
+    - -la
+    - strc

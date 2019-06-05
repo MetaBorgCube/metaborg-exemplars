@@ -1,0 +1,13 @@
+module base
+
+imports
+
+  base/main
+
+context-free start-symbols
+  
+  Start
+
+context-free syntax
+  
+  Start = Exp

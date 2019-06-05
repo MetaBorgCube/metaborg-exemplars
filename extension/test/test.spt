@@ -1,0 +1,7 @@
+module test
+
+language base
+
+test add [[a + b]] parse succeeds
+
+test swap [[a + b]] transform "Swap" to [[b + a]]

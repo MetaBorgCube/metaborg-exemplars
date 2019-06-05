@@ -1,0 +1,9 @@
+module main
+
+language
+
+  start symbols : Start
+
+  table         : target/metaborg/sdf.tbl
+  
+  provider      : target/metaborg/stratego.ctree

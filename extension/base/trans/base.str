@@ -1,0 +1,5 @@
+module base
+
+imports
+
+  libstratego-lib

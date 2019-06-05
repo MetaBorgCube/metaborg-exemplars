@@ -1,0 +1,13 @@
+module main
+
+language
+  
+  context: none
+
+  provider : target/metaborg/stratego.ctree
+
+menus
+
+  menu: "Transform"
+
+    action: "Swap" = swap-editor (source)

@@ -1,0 +1,19 @@
+module base/main
+
+lexical syntax
+
+  VAR    = [a-z]+ 
+  LAYOUT = [\ ] 
+
+lexical restrictions
+
+  VAR -/- [a-z]
+
+context-free restrictions
+  
+  LAYOUT? -/- [\ ]
+
+context-free syntax
+
+  Exp.Var = VAR
+  Exp.Add = <<Exp> + <Exp>>
